@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+</head>
+<body class="dFlex">
+    <header class="dFlex">
+        <div class="container-search dFlex">
+            <div class="container-title">
+                <h1>IP Address Tracker</h1>
+            </div>
+            <div class="container-input dFlex">
+                <input id="inputIp" type="text" placeholder="Search for any IP address or domain">
+                <div id="btnSearch" class="container-image dFlex">
+                    <img src="assets/icon-arrow.svg" alt="Icono arrow">
+                </div>
+            </div>
+
+        </div>
+        <div class="container-data dFlex">
+            <div class="container-ip dFlex">
+                <h3>IP ADDRESS</h3>
+                <span id="infoIp" class="dFlex">192.212.174.101</span>
+            </div>
+            <div class="container-location">
+                <h3>LOCATION</h3>
+                <span id="infoLocation" class="dFlex">Brooklyn, NY 10001</span>
+            </div>
+            <div class="container-timezone">
+                <h3>TIMEZONE</h3>
+                <span id="infoTimezone" class="dFlex">UTC - 05:00</span>
+            </div>
+            <div class="container-isp">
+                <h3>ISP</h3>
+                <span id="infoIsp" class="dFlex">SpaceX Starlink</span>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container-map">
+            <div id="map"></div>
+        </div>
+    </section>
+    <footer class="dFlex">
+        <p class="dFlex">
+            Challenge by <a target="_blank" href="https://www.frontendmentor.io/">Frontend Mentor</a>. Coded by <a target="_blank" href="https://www.linkedin.com/in/francobernardi/">Franco Bernardi</a>
+        </p>
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+</html>
